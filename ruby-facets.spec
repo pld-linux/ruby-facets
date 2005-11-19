@@ -1,10 +1,7 @@
-%define	ruby_rubylibdir	%(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
-%define	ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"])')
-%define	ruby_version	%(ruby -r rbconfig -e 'print Config::CONFIG["ruby_version"]')
+%define tarname facets
 Summary:	Ruby's Fantasic Atomic Core Extensions
 Summary(pl):	Ruby's Fantasic Atomic Core Extensions - biblioteka rozszerzeñ
 Name:		ruby-facets
-%define tarname facets
 Version:	2005.10.30
 Release:	1
 License:	Ruby-alike
@@ -12,6 +9,7 @@ Group:		Development/Languages
 Source0:	http://rubyforge.org/frs/download.php/6807/%{tarname}-%{version}.tar.bz2
 # Source0-md5:	a87fe15334eb5294aaefa23f38a37591
 URL:		http://facets.rubyforge.org/
+BuildRequires:	rpmbuild(macros) >= 1.263
 BuildRequires:	ruby
 Requires:	ruby
 Obsoletes:	ruby-nano
@@ -58,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc rdoc README 
+%doc rdoc README
 %{ruby_rubylibdir}/*
 #%{ruby_ridir}/*
 %{_examplesdir}/%{name}-%{version}
