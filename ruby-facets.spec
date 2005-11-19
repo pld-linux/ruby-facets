@@ -5,14 +5,16 @@ Summary:	Ruby's Fantasic Atomic Core Extensions
 Summary(pl):	Ruby's Fantasic Atomic Core Extensions - biblioteka rozszerzeñ
 Name:		ruby-facets
 %define tarname facets
-Version:	0.7.2
+Version:	2005.10.30
 Release:	1
 License:	Ruby-alike
 Group:		Development/Languages
-Source0:	http://rubyforge.org/frs/download.php/4519/%{tarname}--%{version}.tbz
-# Source0-md5:	d2fdb74e23fab2bbe7eaa693e307e3c7
-URL:		http://calibre.rubyforge.org/
+Source0:	http://rubyforge.org/frs/download.php/6807/%{tarname}-%{version}.tar.bz2
+# Source0-md5:	a87fe15334eb5294aaefa23f38a37591
+URL:		http://facets.rubyforge.org/
 BuildRequires:	ruby
+Obsoletes: ruby-nano
+Obsoletes: ruby-mega
 Requires:	ruby
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -38,7 +40,7 @@ obejmuj± uporz±dkowane hasze, makra modu³ów dla dynamicznych mixinów,
 rzutowanie atrybutów itp.
 
 %prep
-%setup -q -n %{tarname}--%{version}
+%setup -q -n %{tarname}-%{version}
 
 %build
 rdoc --ri --op ri lib
@@ -56,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc rdoc README ChangeLog doc/*
+%doc rdoc README 
 %{ruby_rubylibdir}/*
 #%{ruby_ridir}/*
 %{_examplesdir}/%{name}-%{version}
