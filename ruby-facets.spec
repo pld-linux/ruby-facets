@@ -13,9 +13,9 @@ Source0:	http://rubyforge.org/frs/download.php/6807/%{tarname}-%{version}.tar.bz
 # Source0-md5:	a87fe15334eb5294aaefa23f38a37591
 URL:		http://facets.rubyforge.org/
 BuildRequires:	ruby
-Obsoletes: ruby-nano
-Obsoletes: ruby-mega
 Requires:	ruby
+Obsoletes:	ruby-nano
+Obsoletes:	ruby-mega
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
