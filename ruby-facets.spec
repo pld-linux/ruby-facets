@@ -3,15 +3,15 @@ Summary:	Ruby's Fantasic Atomic Core Extensions
 Summary(pl):	Ruby's Fantasic Atomic Core Extensions - biblioteka rozszerzeñ
 Name:		ruby-facets
 Version:	2005.10.30
-Release:	1
+Release:	2
 License:	Ruby-alike
 Group:		Development/Languages
 Source0:	http://rubyforge.org/frs/download.php/6807/%{tarname}-%{version}.tar.bz2
 # Source0-md5:	a87fe15334eb5294aaefa23f38a37591
 URL:		http://facets.rubyforge.org/
 BuildRequires:	rpmbuild(macros) >= 1.263
-BuildRequires:	ruby
-Requires:	ruby
+BuildRequires:	ruby-modules
+Requires:	ruby-modules
 Obsoletes:	ruby-nano
 Obsoletes:	ruby-mega
 #BuildArch:	noarch
