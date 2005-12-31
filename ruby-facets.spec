@@ -11,7 +11,7 @@ Source0:	http://rubyforge.org/frs/download.php/6807/%{tarname}-%{version}.tar.bz
 URL:		http://facets.rubyforge.org/
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-modules
-%ruby_mod_ver_requires_eq
+%{?ruby_mod_ver_requires_eq}
 Obsoletes:	ruby-nano
 Obsoletes:	ruby-mega
 #BuildArch:	noarch
