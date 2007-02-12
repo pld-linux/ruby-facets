@@ -1,6 +1,6 @@
 %define tarname facets
 Summary:	Ruby's Fantasic Atomic Core Extensions
-Summary(pl):	Ruby's Fantasic Atomic Core Extensions - biblioteka rozszerzeñ
+Summary(pl.UTF-8):   Ruby's Fantasic Atomic Core Extensions - biblioteka rozszerzeÅ„
 Name:		ruby-facets
 Version:	2005.10.30
 Release:	2
@@ -27,15 +27,15 @@ modules, mixins and other assorted additions. Examples include an
 ordered hash, module macros for dynamic mixins, attribute casters,
 etc.
 
-%description -l pl
-Pakiet Ruby's Fantasic Atomic Core Extensions - ma tak± nazwê,
-poniewa¿ najbardziej unikalny aspekt tej biblioteki to atomowo¶æ w
-uk³adzie rozszerzeñ. Ka¿da metoda rozszerzenia jest przechowywana w
-oddzielnym pliku, który mo¿e byæ wymagany niezale¿nie. Ale to tylko
-po³owa tego, co oferuje Facets. Facets zawiera tak¿e obszern± kolekcjê
-klas, modu³ów, mixinów i innych dodatków wy¿szego poziomu. Przyk³ady
-obejmuj± uporz±dkowane hasze, makra modu³ów dla dynamicznych mixinów,
-rzutowanie atrybutów itp.
+%description -l pl.UTF-8
+Pakiet Ruby's Fantasic Atomic Core Extensions - ma takÄ… nazwÄ™,
+poniewaÅ¼ najbardziej unikalny aspekt tej biblioteki to atomowoÅ›Ä‡ w
+ukÅ‚adzie rozszerzeÅ„. KaÅ¼da metoda rozszerzenia jest przechowywana w
+oddzielnym pliku, ktÃ³ry moÅ¼e byÄ‡ wymagany niezaleÅ¼nie. Ale to tylko
+poÅ‚owa tego, co oferuje Facets. Facets zawiera takÅ¼e obszernÄ… kolekcjÄ™
+klas, moduÅ‚Ã³w, mixinÃ³w i innych dodatkÃ³w wyÅ¼szego poziomu. PrzykÅ‚ady
+obejmujÄ… uporzÄ…dkowane hasze, makra moduÅ‚Ã³w dla dynamicznych mixinÃ³w,
+rzutowanie atrybutÃ³w itp.
 
 %prep
 %setup -q -n %{tarname}-%{version}
