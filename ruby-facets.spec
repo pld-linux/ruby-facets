@@ -1,6 +1,6 @@
 %define tarname facets
 Summary:	Ruby's Fantasic Atomic Core Extensions
-Summary(pl.UTF-8):   Ruby's Fantasic Atomic Core Extensions - biblioteka rozszerzeń
+Summary(pl.UTF-8):	Ruby's Fantasic Atomic Core Extensions - biblioteka rozszerzeń
 Name:		ruby-facets
 Version:	2005.10.30
 Release:	2
